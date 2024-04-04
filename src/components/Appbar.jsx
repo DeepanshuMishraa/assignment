@@ -10,7 +10,7 @@ const Appbar = () => {
         <FontAwesomeIcon icon={faChevronLeft}  className="p-1 px-1"/>
         <FontAwesomeIcon icon={faChevronRight}  className="p-1 px-1"/>
         <FontAwesomeIcon icon={faLock} className="p-1 px-1" />
-        <h1 className="text-sm line-clamp-1 p-1 px-2 ">My private channel/👋Getting started</h1>
+        <h1 className="text-sm  line-clamp-1 p-1 px-2 ">My private channel/👋Getting started</h1>
         <FontAwesomeIcon icon={faEllipsisVertical} className="py-2 px-2" onClick={()=>setdropdown(!dropdown)} />
         {dropdown && (
       <div className="absolute top-10 right-6 flex flex-col gap-8 p-4 bg-white shadow-xl rounded-lg ">

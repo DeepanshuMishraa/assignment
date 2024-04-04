@@ -12,13 +12,16 @@ import Content from './components/Content'
 function App() {
   const [bar,setBar] = useState(false);
   return (
-    <main>
-      <Notification/>
+    <>
+    <Notification/> 
+    <div className="flex"> {/* Flex container */}
       <Sidebar/>
-      <Appbar/>
-      <Content/>
-
-    </main>
+      <div className="flex flex-col flex-grow"> {/* Flex container for Appbar and Content */}
+        <Appbar/>
+        <Content/>
+      </div>
+    </div>
+    </>
   )
 }
 
