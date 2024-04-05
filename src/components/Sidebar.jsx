@@ -8,12 +8,12 @@ const Sidebar = () => {
 
   const [bar,setBar] = useState(false);
   return (
-    <>
+    <main className=' min-h-screen'>
     <div className='bg-gray-100'>
-    <FontAwesomeIcon icon={faBars}  onClick={()=>setBar(!bar)}  className='p-1 px-2  bg-gray-100 lg:hidden' />
+    <FontAwesomeIcon icon={faBars}  onClick={()=>setBar(!bar)}  className='p-1 px-2   bg-gray-100 lg:hidden' />
     </div>
-    {bar && <div className="max-lg:w-[22rem]  bg-gray-100 h-full font-mons">
-
+    {bar && <div className="max-lg:w-[22rem]  bg-gray-100 h-screen font-mons overflow-y-auto fixed left-0 top-0">
+    <FontAwesomeIcon icon={faBars}  onClick={()=>setBar(!bar)}  className='p-1 px-2   bg-gray-100 lg:hidden' />
 <div className="profile p-4 flex items-center justify-between">
   <div className="flex items-center gap-4">
     <img src={profile} height={30} width={30} className='rounded-full'/>
@@ -137,7 +137,7 @@ const Sidebar = () => {
   </div>
 </div>
 </div>    
-    </>
+    </main>
   )
 }
 
