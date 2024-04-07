@@ -6,13 +6,15 @@ import { Clock9 } from 'lucide';
 
 const Sidebar = () => {
 
+  const [dark,setDark] = useState(false);
+
   const [bar,setBar] = useState(false);
   return (
-    <main className=' min-h-screen'>
-    <div className='bg-gray-100'>
-    <FontAwesomeIcon icon={faBars}  onClick={()=>setBar(!bar)}  className='p-1 px-2   bg-gray-100 lg:hidden' />
+    <main className={`${dark && "dark"} min-h-screen`}>
+    <div className='bg-gray-100 dark:text-neutral-300 dark:bg-neutral-900'>
+    <FontAwesomeIcon icon={faBars}  onClick={()=>setBar(!bar)}  className='p-1 px-2  bg-gray-100 lg:hidden' />
     </div>
-    {bar && <div className="max-lg:w-[22rem]  bg-gray-100 h-screen font-mons overflow-y-auto fixed left-0 top-0">
+    {bar && <div className="max-lg:w-[22rem]  bg-gray-100 h-screen font-mons overflow-y-auto fixed left-0 top-0 z-50">
     <FontAwesomeIcon icon={faBars}  onClick={()=>setBar(!bar)}  className='p-1 px-2   bg-gray-100 lg:hidden' />
 <div className="profile p-4 flex items-center justify-between">
   <div className="flex items-center gap-4">
@@ -20,6 +22,9 @@ const Sidebar = () => {
     <h1 className='font-bold font-sans text-gray-600'>rofero team</h1>
   </div>
   <div>
+    {/* <button onClick={()=>setDark(!dark)} className='bg-red-800 p-2'>
+      {dark ? 'Light':'Dark'}
+    </button> */}
   <FontAwesomeIcon icon={faBell} />
   </div>
 </div>

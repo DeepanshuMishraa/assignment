@@ -3,9 +3,9 @@ import c2 from '../assets/c2.jpeg';
 
 const Content = () => {
     return (
-        <div className="w-full font-mons p-4 max-lg:p-1">
-            <h1 className="mt-4 p-2 font-bold max-lg:text-2xl max-lg:text-center text-4xl">Getting Started</h1>
-            <div className="border bg-gray-100 ml-2 mr-2">
+        <div className="w-full font-mons p-4 max-lg:p-1 mt-4 relative max-lg:right-2">
+            <h1 className="mt-4 p-2 font-bold text-4xl ">Getting Started</h1>
+            <div className="border bg-gray-100 ml-2 mr-2 mt-6">
                 <div className="font-light text-lg p-4">
                     <p style={{ lineHeight: "1.7", marginBottom: "12px" }}>
                         🔒This doc is your <span className="font-bold">private channel</span> where you can store all your private work. You can share docs one by one from here, but to properly organize your team's work knowledge base, use <span className="font-bold">workspace channels</span>.
@@ -23,8 +23,8 @@ const Content = () => {
             <div>
                 <img src={c1} alt="content image" className='w-full max-lg:w-[20rem] h-64 mt-2 object-cover' />
             </div>
-            <div className='flex items-center justify-center max-lg:items-start'>
-            <input type="text" placeholder='💡 Give it a go by typing / below' className='mt-28 h-10  p-2 font-normal text-md bg-gray-100 placeholder-black rounded  w-[50rem] mx-auto max-lg:w-[18rem]' />
+            <div className='flex items-center justify-center max-lg:items-start '>
+            <input type="text" placeholder='💡 Give it a go by typing / below' className='mt-28  h-10  p-2 font-normal text-md bg-gray-100 placeholder-black rounded  w-[50rem] mx-auto max-lg:w-[18rem]' />
             </div>
         </div>
     );
