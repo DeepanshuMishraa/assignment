@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArchive, faBars, faBell, faBook, faCircleHalfStroke, faClock, faClockFour, faCommentDollar, faHand, faLock, faSearch, faShapes, faSortDown, faUserPlus, faX} from '@fortawesome/free-solid-svg-icons';
+import { faArchive, faBars, faBell, faBook, faCircleHalfStroke, faClock, faClockFour, faCommentDollar, faHand, faLock, faMoon, faSearch, faShapes, faSortDown, faUserPlus, faX} from '@fortawesome/free-solid-svg-icons';
 import profile from '../assets/profile.jpg';
 import { Clock9 } from 'lucide';
 
@@ -21,11 +21,12 @@ const Sidebar = () => {
     <img src={profile} height={30} width={30} className='rounded-full'/>
     <h1 className='font-bold font-sans text-gray-600'>rofero team</h1>
   </div>
-  <div>
+  <div className='flex gap-4'>
     {/* <button onClick={()=>setDark(!dark)} className='bg-red-800 p-2'>
       {dark ? 'Light':'Dark'}
     </button> */}
-  <FontAwesomeIcon icon={faBell} />
+    <FontAwesomeIcon icon={faMoon} className='bg-gray-200 rounded p-2 cursor-pointer hover:bg-white duration-150' />
+  <FontAwesomeIcon icon={faBell} className='bg-gray-200 p-2 rounded cursor-pointer hover:bg-white duration-150' />
   </div>
 </div>
 <div className='search-box relative'>
@@ -87,8 +88,9 @@ const Sidebar = () => {
     <img src={profile} height={30} width={30} className='rounded-full'/>
     <h1 className='font-bold font-sans text-gray-600'>rofero team</h1>
   </div>
-  <div>
-  <FontAwesomeIcon icon={faBell} />
+  <div className='flex gap-4'>
+  <FontAwesomeIcon icon={faMoon} className='bg-gray-200 rounded p-2 cursor-pointer hover:bg-white duration-150' />
+  <FontAwesomeIcon icon={faBell} className='bg-gray-200 p-2 rounded cursor-pointer hover:bg-white duration-150' />
   </div>
 </div>
 <div className='search-box relative'>
@@ -132,7 +134,7 @@ const Sidebar = () => {
           </div>
       </div>
   </div>
-  <div className='tab-3 flex flex-col mt-[10rem]  ml-8'>
+  <div className='tab-3 flex flex-col mt-[20rem]  ml-8'>
       <div className='mb-4 space-y-2'>
       <h1 className='p-1'><FontAwesomeIcon icon={faUserPlus} className='mr-1' />Add People</h1>
       <h1 className='p-1'><FontAwesomeIcon icon={faCircleHalfStroke} className='mr-1' />Templates</h1>
