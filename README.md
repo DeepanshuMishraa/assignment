@@ -6,3 +6,4 @@ Tech Stack Used:
  - Tailwind CSS for Styling
  - Font Awesome Icons for Icons and SVGs
  - Netlify For Deploying the frontend
+ - Fully Responsive For Mobile and Tablet devices
